@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Home */
+.body-home{
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-position: center center;
+    background-size: 100vw auto;
+    background-attachment: fixed;
+    height: 100vh;
+}
+a.link-home {
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 4px;
+    padding: 26px 0px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.1s;
+}
+a.link-home > b{
+    margin-right: 5px;
+}
+.links-cabecalho-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 0;
+    height: 80px;
+    background: #ffffff1a;
+    backdrop-filter: blur(4px);
+}
+.cabecalho.row {
+    padding: 35px 0px 0px 25px;
+    height: 80px;
+}
+.logo-cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linha-cabecalho {
+    display: grid;
+    align-content: center;
+}
+.linha-topo-logo{
+    width: 700px;
+    color: #fff;
+}
+.linha-topo-logo {
+    width: 35vw;
+    color: #fff;
+    z-index: 999;
+    opacity: initial !important;
+}
+.text-subtitle-home-space{
+    font-size: 28px;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+}
+.title-home-space{
+    font-size: 150px;
+    font-family: 'Bellefair', serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+.text-home-space {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 200;
+    max-width: 450px;
+    line-height: 32px;
+}
+.btn-explore-home{
+    padding: 100px 55px;
+    color: #0B0D17;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 150px;
+    cursor: pointer;
+    transition: box-shadow 1s;
+}
+section.container.corpo-do-site-home {
+    height: 87vh;
+    display: grid;
+    align-items: end;
+    padding-bottom: 55px;
+}
+.btn-explore-home-direita {
+    align-items: end;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-explore-home:hover {
+    box-shadow: 0px 0px 0px 80px #ffffff45;
+    transition: box-shadow 1s;
+    color: #0B0D17;
+}
+a.link-home.active {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    transition: border-bottom 0.1s;
+}
+a.link-home:hover {
+    color: #fff;
+    border-bottom: 3px solid #ffffff65;
+    transition: border-bottom 0.1s;
+}
+.header-mobile{
+    display: none;
+}
+
+/* Destination */
+.body-destination{
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    background-position: center center;
+    background-size: 100vw auto;
+    background-attachment: fixed;
+    height: 100vh;
+}
+p.text-subtitle-destination {
+    font-size: 28px;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+}
+span.number-title {
+    font-weight: bold;
+    color: #ffffff82;
+}
+h2.title-page-destination {
+    font-size: 100px;
+    font-family: 'Bellefair', serif;
+    color: #fff;
+}
+hr.linha-page-conteudos {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    color: #979797b3;
+    opacity: initial !important;
+}
+p.text-information {
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px !important;
+    letter-spacing: 2.36px;
+}
+h3.informations {
+    color: #fff;
+    font-family: 'Bellefair';
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.informations-destination {
+    display: flex;
+}
+.first-information {
+    margin-right: 8em;
+}
+section.container.section-destionation-planets {
+    margin-top: 4em;
+    padding-bottom: 45px;
+}
+.row.photo-text-planet {
+    display: flex;
+    align-items: center;
+}
+.row.btn-options-destination {
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+.menu-destination a {
+    color: #D0D6F9;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    margin-right: 25px;
+    padding: 15px 0;
+}
+.selected{
+    color: #fff !important;
+    padding: 15px 0;
+    border-bottom: 3px solid #fff;
+}
+.menu-destination a:hover {
+    color: #fff;
+}
+#d2, #d3, #d4{
+    display: none;
+}
+.menu-planets-mobile{
+    display: none;
+}
+.menu-planets-desktop{
+    display: block;
+}
+@media (min-width: 768px)and (max-width: 1024px) {
+    /* Página Home */
+    .body-home{
+        background-image: url(../assets/home/background-home-tablet.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto 100vh;
+        background-attachment: fixed;
+    }
+    .linha-topo-logo{
+        display:none;
+    }
+    a.link-home > b{
+        display: none;
+    }
+    a.link-home {
+        font-size: 14px;
+    }
+    .cabecalho.row {
+        padding: 0px 0px 0px 25px;
+        height: 100px;
+    }
+    .logo-cabecalho {
+        justify-content: start;
+    }
+    .links-cabecalho-home {
+        height: 100px;
+    }
+    a.link-home {
+        padding: 37px 0px;
+    }
+    section.container.corpo-do-site-home {
+        align-items: center;
+        height: 90vh;
+        display: grid;
+        padding-bottom: 0px;
+    }
+    .btn-explore-home-direita {
+        justify-content: center;
+    }
+    .section-text{
+        text-align: center;
+        margin-bottom: 8em;
+    }
+    .text-home-space {
+        max-width: none;
+        font-size: 16px;
+        line-height: 28px;
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+    .btn-explore-home-direita {
+        margin-bottom: -55px;
+    }
+    .header-mobile{
+        display: none;
+    }
+    .text-subtitle-home-space {
+        font-size: 20px;
+    }
+}
+@media (max-width: 767px) {
+    /* Página Home */
+    .body-home{
+        background-image: url(../assets/home/background-home-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    .header-mobile{
+        display: block;
+        margin-top: 15px;
+        padding-left: 15px;
+    }
+    .header-desktop-tablet{
+        display: none;
+    }
+    .text-subtitle-home-space {
+        font-size: 16px;
+    }
+    .title-home-space {
+        font-size: 80px;
+    }
+    .text-home-space {
+        font-size: 15px;
+        line-height: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    section.container.corpo-do-site-home {
+        align-items: center;
+        padding-bottom: 0px; 
+    }
+    .btn-explore-home {
+        padding: 70px 40px;
+        font-size: 20px;
+    }
+    .btn-explore-home-direita {
+        justify-content: center;
+        margin-bottom: -55px;
+    }
+    .section-text {
+        text-align: center;
+        margin-bottom: 4em;
+    }
+    i.bi.bi-list {
+        font-size: 55px;
+        color: #fff;
+    }
+    button.navbar-toggler {
+        border: none !important;
+    }
+    .offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+        --bs-offcanvas-width: 250px !important;
+        --bs-offcanvas-bg: transparent !important;
+        backdrop-filter: blur(25px);
+    }
+    a.nav-link {
+        color: #fff;
+        font-weight: 200;
+        font-size: 16px;
+        font-family: 'Barlow Condensed';
+    }
+    .btn-close {
+        filter: invert(81%) sepia(2%) saturate(3040%) hue-rotate(196deg) brightness(107%) contrast(95%);
+        opacity: initial !important;
+    }
+    .offcanvas-header {
+        justify-content: end !important;
+    }
+    ul.navbar-nav.justify-content-end.flex-grow-1{
+        margin-top: 45px;
+        padding-left: 35px;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+    .offcanvas-body {
+        padding: 0 !important;
+    }
+    a.nav-link.ativa {
+        border-right: 3px solid #fff;
+        color: #fff;
+    }
+    a.nav-link:hover {
+        border-right: 3px solid #fff;
+        color: #fff;
+    }
+    /* Página Destination */
+    .body-destination{
+        background-image: url(../assets/destination/background-destination-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    .row.photo-text-planet > div > img {
+        width: -webkit-fill-available !important;
+        object-fit: cover;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .menu-planets-mobile{
+        display: block !important;
+    }
+    .menu-planets-desktop{
+        display: none !important;
+    }
+}
