@@ -19,3 +19,11 @@ $('.btn-links-planets').click(function(){
     $('.btn-links-planets').removeClass('selected')
     $(this).addClass('selected');
 });
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

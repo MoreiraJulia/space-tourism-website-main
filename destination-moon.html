@@ -21,7 +21,7 @@
         <hr class="linha-topo-logo">
       </div>
       <div class="col-md-8 col-lg-7 links-cabecalho-home">
-        <a href="" class="link-home"><b>00</b> Home</a>
+        <a href="index.html" class="link-home"><b>00</b> Home</a>
         <a href="" class="link-home active"><b>01</b> Destination</a>
         <a href="" class="link-home"><b>02</b> Crew</a>
         <a href="" class="link-home"><b>03</b> Technology</a>
@@ -33,7 +33,6 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="assets/shared/logo.svg" class="img-logo">></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <!-- <span class="navbar-toggler-icon"></span> -->
           <i class="bi bi-list"></i>
         </button>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -43,7 +42,7 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item">
-                <a class="nav-link ativa"href="#"><b>00</b> Home</a>
+                <a class="nav-link ativa" href="index.html"><b>00</b> Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><b>01</b> Destination</a>
@@ -73,20 +72,20 @@
         </div>
       </div>
     </div>
-    <div id="d1">
+    <div id="d1" class="d1">
       <div class="row photo-text-planet">
         <div class="col-lg-6 col-12">
           <img src="assets/destination/image-moon.webp">
         </div>
         <div class="menu-destination menu-planets-mobile">
-          <a href="javascript:void(0)" class="btn-links-planets link-one selected">Moon</a>
-          <a href="javascript:void(1)" class="btn-links-planets link-two">Mars</a>
-          <a href="javascript:void(2)" class="btn-links-planets link-three">Europa</a>
-          <a href="javascript:void(3)" class="btn-links-planets link-four">Titan</a>
+          <a href="javascript:void(0)" class="btn-links-planets-moon link-one selected-d1">Moon</a>
+          <a href="javascript:void(1)" class="btn-links-planets-moon link-two">Mars</a>
+          <a href="javascript:void(2)" class="btn-links-planets-moon link-three">Europa</a>
+          <a href="javascript:void(3)" class="btn-links-planets-moon link-four">Titan</a>
         </div>
         <div class="col-lg-6 col-12">
           <h2 class="title-page-destination">MOON</h2>       
-          <p class="text-home-space">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>   
+          <p class="text-home-space text-destination">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>   
           <hr class="linha-page-conteudos">
           <div class="informations-destination">
             <div class="first-information">
@@ -101,14 +100,20 @@
         </div>
       </div>
     </div>
-    <div id="d2">
+    <div id="d2" class="d2">
       <div class="row photo-text-planet">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-12">
           <img src="assets/destination/image-mars.webp">
         </div>
-        <div class="col-lg-6">
+        <div class="menu-destination menu-planets-mobile">
+          <a href="javascript:void(0)" class="btn-links-planets-mars link-one">Moon</a>
+          <a href="javascript:void(1)" class="btn-links-planets-mars link-two selected-d2">Mars</a>
+          <a href="javascript:void(2)" class="btn-links-planets-mars link-three">Europa</a>
+          <a href="javascript:void(3)" class="btn-links-planets-mars link-four">Titan</a>
+        </div>
+        <div class="col-lg-6 col-12">
           <h2 class="title-page-destination">MARS</h2>       
-          <p class="text-home-space">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>   
+          <p class="text-home-space text-destination">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>   
           <hr class="linha-page-conteudos">
           <div class="informations-destination">
             <div class="first-information">
@@ -123,14 +128,20 @@
         </div>
       </div>
     </div>
-    <div id="d3">
+    <div id="d3" class="d3">
       <div class="row photo-text-planet">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-12">
           <img src="assets/destination/image-europa.webp">
         </div>
-        <div class="col-lg-6">
+        <div class="menu-destination menu-planets-mobile">
+          <a href="javascript:void(0)" class="btn-links-planets-europa link-one">Moon</a>
+          <a href="javascript:void(1)" class="btn-links-planets-europa link-two">Mars</a>
+          <a href="javascript:void(2)" class="btn-links-planets-europa link-three selected-d3">Europa</a>
+          <a href="javascript:void(3)" class="btn-links-planets-europa link-four">Titan</a>
+        </div>
+        <div class="col-lg-6 col-12">
           <h2 class="title-page-destination">EUROPA</h2>       
-          <p class="text-home-space">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>   
+          <p class="text-home-space text-destination">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>   
           <hr class="linha-page-conteudos">
           <div class="informations-destination">
             <div class="first-information">
@@ -145,14 +156,20 @@
         </div>
       </div>
     </div>
-    <div id="d4">
+    <div id="d4" class="d4">
       <div class="row photo-text-planet">
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-12">
           <img src="assets/destination/image-titan.webp">
         </div>
-        <div class="col-lg-6">
+        <div class="menu-destination menu-planets-mobile">
+          <a href="javascript:void(0)" class="btn-links-planets-titan link-one">Moon</a>
+          <a href="javascript:void(1)" class="btn-links-planets-titan link-two">Mars</a>
+          <a href="javascript:void(2)" class="btn-links-planets-titan link-three">Europa</a>
+          <a href="javascript:void(3)" class="btn-links-planets-titan link-four selected-d4">Titan</a>
+        </div>
+        <div class="col-lg-6 col-12">
           <h2 class="title-page-destination">TITAN</h2>       
-          <p class="text-home-space">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>   
+          <p class="text-home-space text-destination">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>   
           <hr class="linha-page-conteudos">
           <div class="informations-destination">
             <div class="first-information">

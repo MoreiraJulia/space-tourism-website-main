@@ -130,7 +130,8 @@ a.link-home:hover {
     background-attachment: fixed;
     height: 100vh;
 }
-p.text-subtitle-destination {
+p.text-subtitle-destination,
+p.text-subtitle-crew {
     font-size: 28px;
     font-weight: 200;
     color: #fff;
@@ -193,7 +194,11 @@ section.container.section-destionation-planets {
     margin-right: 25px;
     padding: 15px 0;
 }
-.selected{
+.selected,
+.selected-d1,
+.selected-d2,
+.selected-d3,
+.selected-d4{
     color: #fff !important;
     padding: 15px 0;
     border-bottom: 3px solid #fff;
@@ -210,6 +215,103 @@ section.container.section-destionation-planets {
 .menu-planets-desktop{
     display: block;
 }
+/* Página Crew */
+.body-crew{
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+    background-position: center center;
+    background-size: 100vw auto;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section.container.section-crew {
+    margin-top: 4em;
+}
+h3.subtitle-crew {
+    font-size: 32px;
+    font-family: 'Bellefair';
+    color: #ffffffad;
+    text-transform: uppercase;
+}
+h2.title-crew {
+    font-size: 56px;
+    color: #fff;
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+}
+p.text-crew {
+    font-size: 18px;
+    color: #D0D6F9;
+    font-family: 'Barlow';
+    padding-right: 115px;
+}
+
+.row.crew-carousel {
+    align-items: center;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    width: auto !important;
+    margin-bottom: 75px;
+}
+.swiper {
+    margin-top: -40px;
+}
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,20px)) !important;
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,20px)) !important;
+}
+.swiper-pagination-bullet-active {
+    background: #fff !important;
+}
+.swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    height: 600px;
+}
+.commander-section{
+    margin-top: -50px !important; 
+}
+img.image-carousel-crew-ansari {
+    height: 600px;
+}
+.image-carousel-mobile{
+    display: none;
+}
+.image-carousel-tablet{
+    display: block;
+}
+.swiper-pagination-bullet {
+    background: #e7cecee0 !important;
+}
+/* Página  technology */
+.body-technology{
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+    background-position: center center;
+    background-size: 100vw auto;
+    background-attachment: fixed;
+    height: 100vh;
+}
+@media (min-width: 1400px){
+    .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+        height: 700px;
+    }
+    img.image-carousel-crew-ansari {
+        height: 700px;
+    }
+}
+
 @media (min-width: 768px)and (max-width: 1024px) {
     /* Página Home */
     .body-home{
@@ -269,6 +371,103 @@ section.container.section-destionation-planets {
     }
     .text-subtitle-home-space {
         font-size: 20px;
+    }
+    /* Página Destination */
+    .body-destination{
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto 100vh;
+        background-attachment: fixed;
+    }
+    .menu-planets-mobile{
+        display: block !important;
+    }
+    .menu-planets-desktop{
+        display: none !important;
+    }
+    .row.photo-text-planet {
+        text-align: center;
+    }
+    .row.photo-text-planet > div > img {
+        width: 350px;
+        margin-top: 3em;
+        margin-bottom: 4em;
+    }
+    .menu-destination.menu-planets-mobile {
+        margin-bottom: 3.5em;
+    }
+    .informations-destination {
+        display: flex;
+        justify-content: center;
+    }
+    /* Página Crew */
+    .body-crew{
+        background-image: url(../assets/crew/background-crew-tablet.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto 100vh;
+        background-attachment: fixed;
+    }
+    .row.crew-carousel {
+        text-align: center;
+        margin-top: 8em;
+    }
+    img.image-carousel-crew-douglas,
+    img.image-carousel-crew-mark,
+    img.image-carousel-crew-victor,
+    img.image-carousel-crew-ansari {
+        width: 400px;
+    }
+    .col-lg-6.col-md-12.image-carousel-tablet,
+    .col-lg-5.col-md-12.image-carousel-tablet {
+        justify-content: center;
+        display: flex;
+        margin-top: 4em;
+    }
+    p.text-crew {
+        padding-right: 0px;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        width: 100% !important;
+    }
+    .swiper-pagination {
+        margin-bottom: 33em !important;
+    }
+    .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+        height: 900px;
+    }
+    .commander-section {
+        margin-top: 0px !important;
+    }
+    img.image-carousel-crew-ansari {
+        height: 490px;
+    }
+    p.text-subtitle-destination, p.text-subtitle-crew {
+        font-size: 20px;
+    }
+    h3.subtitle-crew {
+        font-size: 24px;
+    }
+    h2.title-crew {
+        font-size: 40px;
+    }
+    p.text-crew {
+        font-size: 16px;
+    }
+    .image-carousel-mobile{
+        display: none;
+    }
+    .image-carousel-tablet{
+        display: block;
+    }
+    /* Página technology */
+    .body-technology{
+        background-image: url(../assets/technology/background-technology-tablet.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto 100vh;
+        background-attachment: fixed;
     }
 }
 @media (max-width: 767px) {
@@ -367,7 +566,6 @@ section.container.section-destionation-planets {
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
-        overflow: hidden;
     }
     .row.photo-text-planet > div > img {
         width: -webkit-fill-available !important;
@@ -380,5 +578,105 @@ section.container.section-destionation-planets {
     }
     .menu-planets-desktop{
         display: none !important;
+    }
+    section.container.section-destionation-planets {
+        margin-top: 2em;
+    }
+    p.text-subtitle-destination,
+    p.text-subtitle-crew {
+        text-align: center;
+        margin-bottom: 1.6em;
+    }
+    .menu-destination.menu-planets-mobile {
+        text-align: center;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    h2.title-page-destination {
+        font-size: 56px;
+        text-align: center;
+    }
+    .text-destination {
+        text-align: center;
+    }
+    .informations-destination {
+        display: block;
+        text-align: center;
+    }
+    .first-information {
+        margin-right: 0em;
+        margin-bottom: 45px;
+    }
+    /* Página Crew */
+    .body-crew{
+        background-image: url(../assets/crew/background-crew-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+    }
+    .image-carousel-mobile{
+        display: block !important;
+    }
+    .image-carousel-tablet{
+        display: none !important;
+    }
+    .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+        height: auto;
+    }
+    img.image-carousel-crew-douglas {
+        width: 250px;
+    }
+    img.image-carousel-crew-mark{
+        width: 231px;
+    }
+    img.image-carousel-crew-victor {
+        width: 292px;
+    }
+    img.image-carousel-crew-ansari {
+        height: auto;
+        width: 328px
+    }
+    .carousel-mobile {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #979797;
+    }
+    .row.crew-carousel {
+        margin-top: 3em;
+    }
+    p.text-crew {
+        padding-right: 0px;
+        font-size: 15px;
+    }
+    .col-lg-6.col-md-12.col-12.commander-section,
+    .col-lg-7.col-md-12.col-12.commander-section {
+        text-align: center;
+        margin-top: 5em !important;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        width: 100% !important;
+        margin-bottom: 13em; 
+    }
+    h3.subtitle-crew {
+        font-size: 16px;
+    }
+    h2.title-crew {
+        font-size: 24px;
+    }
+    section.container.section-crew {
+        margin-top: 1.5em;
+    }
+    .swiper {
+        margin-top: -50px;
+    }
+    /* Página technology */
+    .body-technology{
+        background-image: url(../assets/technology/background-technology-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100vw 100vh;
+        background-attachment: fixed;
+        overflow: hidden;
     }
 }
