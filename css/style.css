@@ -131,7 +131,8 @@ a.link-home:hover {
     height: 100vh;
 }
 p.text-subtitle-destination,
-p.text-subtitle-crew {
+p.text-subtitle-crew,
+p.text-subtitle-technology {
     font-size: 28px;
     font-weight: 200;
     color: #fff;
@@ -302,6 +303,35 @@ img.image-carousel-crew-ansari {
     background-size: 100vw auto;
     background-attachment: fixed;
     height: 100vh;
+}
+.tab {
+    display: inline-grid;
+}
+.tab button {
+    outline: none;
+    cursor: pointer;
+    padding: 12px 22px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+}
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.row.section-technology {
+    display: flex;
+    align-items: center;
 }
 @media (min-width: 1400px){
     .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {

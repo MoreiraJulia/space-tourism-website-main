@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link href="../css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+
+</head>
+<body class="body-technology">
+  <header class="container-fluid header-desktop-tablet">
+    <div class="cabecalho row">
+      <div class="col-md-2 col-lg-1 logo-cabecalho">
+        <img src="../assets/shared/logo.svg" class="img-logo">
+      </div>
+      <div class="col-md-2 col-lg-4 linha-cabecalho">
+        <hr class="linha-topo-logo">
+      </div>
+      <div class="col-md-8 col-lg-7 links-cabecalho-home">
+        <a href="../index.html" class="link-home"><b>00</b> Home</a>
+        <a href="" class="link-home"><b>01</b> Destination</a>
+        <a href="../crew/index.html" class="link-home"><b>02</b> Crew</a>
+        <a href="../technology/index.html" class="link-home active"><b>03</b> Technology</a>
+      </div>
+    </div>
+  </header>
+  <header class="header-mobile">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../assets/shared/logo.svg" class="img-logo">></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"><b>00</b> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../destination/index.html"><b>01</b> Destination</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../crew/index.html"><b>02</b> Crew</a>
+              </li>
+              <li class="nav-item ativa">
+                <a class="nav-link" href="#"><b>03</b> Technology</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 col-lg-2"></div>
+      <div class="col-md-10 col-lg-10">
+        <p class="text-subtitle-technology"><span class="number-title">03</span> Space launch 101</p>
+        <div class="row section-technology">
+          <div class="col-md-1 col-lg-1 botoes-technology">
+            <div class="tab">
+              <button class="tablinks" onclick="openTechnology(event, 'Launch')">1</button>
+              <button class="tablinks" onclick="openTechnology(event, 'Paris')">2</button>
+              <button class="tablinks" onclick="openTechnology(event, 'Tokyo')">3</button>
+            </div>
+          </div>
+          <div class="col-md-11 col-lg-11">
+            <div id="Launch" class="tabcontent" style="display: block;" >
+              <div class="row">
+                <div class="col-md-6 col-lg-6">
+                  <p class="id-page-techlogy">The terminology...</p>
+                  <h2 class="titulo-page-techlonology">Launch vehicle</h2>
+                  <p class="texto-page-techlonology">
+                    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+                </div>
+                <div class="col-md-6 col-lg-6">
+
+                </div>
+              </div>
+             
+            </div>
+            
+            <div id="Paris" class="tabcontent">
+              <h3>Paris</h3>
+              <p>Paris is the capital of France.</p> 
+            </div>
+            
+            <div id="Tokyo" class="tabcontent">
+              <h3>Tokyo</h3>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+          </div>
+        </div>
+       
+        
+        
+        
+     
+      </div>
+    </div>
+
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
